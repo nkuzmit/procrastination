@@ -7,7 +7,8 @@ public class PrivetUsername {
 	public static void main(String[] args) {
 	//сегодн€ не пушитс€
 		System.out.print(" ак теб€ зовут?\n");
-		Scanner greeting = new Scanner(System.in, "Windows-1251"); //ƒолжно выводить выводить пон€тный текст на русском, вроде...
+		Scanner greeting = new Scanner(System.in, "cp866"); 
+		System.setProperty("console.encoding","cp866");//ƒолжно выводить выводить пон€тный текст на русском, вроде...
 		String userName = greeting.next();
 		System.out.print("ѕривет, " + userName + "!");
 		greeting.close();
