@@ -1,14 +1,15 @@
+package hw0;
+
 import java.util.Scanner;
 
 public class PrivetUsername {
 	
 	public static void main(String[] args) {
-	
+	//сегодня не пушится
 		System.out.print("Как тебя зовут?\n");
-		Scanner greeting = new Scanner(System.in);
+		Scanner greeting = new Scanner(System.in, "Windows-1251"); //Должно выводить выводить понятный текст на русском, вроде...
 		String userName = greeting.next();
 		System.out.print("Привет, " + userName + "!");
+		greeting.close();
 	}
 }
-
-		
