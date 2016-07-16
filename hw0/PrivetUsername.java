@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class PrivetUsername {
 	
 	public static void main(String[] args) {
-	//сегодня не пушится
-		System.out.print("Как тебя зовут?\n");
+	
+		System.out.print("РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?\n");
 		Scanner greeting = new Scanner(System.in, "cp866"); 
-		System.setProperty("console.encoding","cp866");//Должно выводить выводить понятный текст на русском, вроде...
+		System.setProperty("console.encoding","cp866");//Р”РѕР»Р¶РЅРѕ РІС‹РІРѕРґРёС‚СЊ РЅР° СЂСѓСЃСЃРєРѕРј, РІСЂРѕРґРµ
 		String userName = greeting.next();
-		System.out.print("Привет, " + userName + "!");
+		System.out.print("РџСЂРёРІРµС‚, " + userName + "!");
 		greeting.close();
 	}
 }
