@@ -4,9 +4,7 @@ import java.util.Scanner;
 class Calc {
 	public static void main(String args[])
 		throws java.io.IOException {
-		
-		//System.exit(0);
-		
+				
 		System.setProperty("console.encoding","cp866");				//На всякий случай задаю кодировку
 		System.out.print("Введи первое число\n");					//Прошу ввести первое из чисел
 		Scanner first = new Scanner(System.in); 
