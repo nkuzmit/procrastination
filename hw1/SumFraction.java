@@ -16,7 +16,6 @@ public static void main(String[] args){
 		for(float i = 2; i <= n; i++){
 			f = (1 / i)+ f;
 			
-			//System.out.println(f);
 		}
 		System.out.println(1 + f);
 		
