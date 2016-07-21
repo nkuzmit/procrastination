@@ -1,6 +1,6 @@
 package hw1;
 import java.util.Scanner;
-//использования цикла do-while для выбора пункта меню
+
 class Calc {
 	public static void main(String args[])
 		throws java.io.IOException {
