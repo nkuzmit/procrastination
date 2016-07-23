@@ -6,20 +6,20 @@ public class Compare102 {
 	
 	public static void main(String[] args){
 		
-		System.setProperty("console.encoding","cp866");	//На всякий случай задаю кодировку
-		System.out.print("Введи x\n");					//Прошу ввести первое из сравниваемых чисел
+		System.setProperty("console.encoding","cp866");	//РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№ Р·Р°РґР°СЋ РєРѕРґРёСЂРѕРІРєСѓ
+		System.out.print("Р’РІРµРґРё x\n");					//РџСЂРѕС€Сѓ РІРІРµСЃС‚Рё РїРµСЂРІРѕРµ РёР· СЃСЂР°РІРЅРёРІР°РµРјС‹С… С‡РёСЃРµР»
 		Scanner first = new Scanner(System.in); 
 		int x = first.nextInt();
 		
-		System.out.print("Введи y\n");					//Прошу ввести второе число
+		System.out.print("Р’РІРµРґРё y\n");					//РџСЂРѕС€Сѓ РІРІРµСЃС‚Рё РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ
 		Scanner second = new Scanner(System.in); 
 		int y = second.nextInt();
 		
-		if(x < y) System.out.println("x меньше y");		//Сам процесс сравнения и вывод результата
+		if(x < y) System.out.println("x РјРµРЅСЊС€Рµ y");		//РЎР°Рј РїСЂРѕС†РµСЃСЃ СЃСЂР°РІРЅРµРЅРёСЏ Рё РІС‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 		
-		if(x == y) System.out.println("x равен y");
+		if(x == y) System.out.println("x СЂР°РІРµРЅ y");
 		
-		if(x > y) System.out.println("x больше y");
+		if(x > y) System.out.println("x Р±РѕР»СЊС€Рµ y");
 		first.close();
 		second.close();
 	}

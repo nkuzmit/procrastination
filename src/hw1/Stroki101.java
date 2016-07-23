@@ -2,15 +2,15 @@ package hw1;
 
 public class Stroki101 {   
 	public static void main(String[] args) {
-		String str1 = "Образовательный центр Парка высоких технологий"; //Рандомная строка, с рандомного сайта
-		int length = str1.length();										//Вычисляем длину строи
-		System.out.println("Длина строки = " + length);					//и выводим на экран				
+		String str1 = "РћР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹Р№ С†РµРЅС‚СЂ РџР°СЂРєР° РІС‹СЃРѕРєРёС… С‚РµС…РЅРѕР»РѕРіРёР№"; //Р Р°РЅРґРѕРјРЅР°СЏ СЃС‚СЂРѕРєР°, СЃ СЂР°РЅРґРѕРјРЅРѕРіРѕ СЃР°Р№С‚Р°
+		int length = str1.length();										//Р’С‹С‡РёСЃР»СЏРµРј РґР»РёРЅСѓ СЃС‚СЂРѕРё
+		System.out.println("Р”Р»РёРЅР° СЃС‚СЂРѕРєРё = " + length);					//Рё РІС‹РІРѕРґРёРј РЅР° СЌРєСЂР°РЅ				
 		int half = length/2;											
 				
-		String firstHalf = str1.substring(0, length - half);			//Извлекаем подстроку равную первой половине нашей строки
-		String secondHalf = str1.substring(half);						//И второй
-		System.out.println("Первая половина строки = " + firstHalf);
-		System.out.println("Вторая половина строки = " + secondHalf);
+		String firstHalf = str1.substring(0, length - half);			//РР·РІР»РµРєР°РµРј РїРѕРґСЃС‚СЂРѕРєСѓ СЂР°РІРЅСѓСЋ РїРµСЂРІРѕР№ РїРѕР»РѕРІРёРЅРµ РЅР°С€РµР№ СЃС‚СЂРѕРєРё
+		String secondHalf = str1.substring(half);						//Р РІС‚РѕСЂРѕР№
+		System.out.println("РџРµСЂРІР°СЏ РїРѕР»РѕРІРёРЅР° СЃС‚СЂРѕРєРё = " + firstHalf);
+		System.out.println("Р’С‚РѕСЂР°СЏ РїРѕР»РѕРІРёРЅР° СЃС‚СЂРѕРєРё = " + secondHalf);
 	}
 
 }
