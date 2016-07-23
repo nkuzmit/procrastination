@@ -6,8 +6,8 @@ public class Factorial {
 
 public static void main(String[] args){
 		
-		System.setProperty("console.encoding","cp866");	//РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№ Р·Р°РґР°СЋ РєРѕРґРёСЂРѕРІРєСѓ
-		System.out.print("Р—Р°РґР°Р№С‚Рµ n:\n");	//РџСЂРёРЅРёРјР°РµРј n
+		System.setProperty("console.encoding","cp866");	//На всякий случай задаю кодировку
+		System.out.print("Задайте n:\n");	//Принимаем n
 		Scanner num = new Scanner(System.in); 
 		int n = num.nextInt();
 		

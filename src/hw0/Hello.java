@@ -2,6 +2,6 @@ package hw0;
 
 public class Hello {
 	public static void main(String[] args) {		
-		System.out.println("РџСЂРёРІРµС‚, Java!"); //РќР°С‡РёРЅР°СЋ СЃРЅР°С‡Р°Р»Р°. Simple basic stuff.
+		System.out.println("Привет, Java!"); //Начинаю сначала. Simple basic stuff.
 		} 
 	}

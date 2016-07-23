@@ -5,25 +5,25 @@ import java.util.Scanner;
 public class Weight {
 public static void main(String[] args){
 		
-		System.setProperty("console.encoding","cp866");	//РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№ Р·Р°РґР°СЋ РєРѕРґРёСЂРѕРІРєСѓ
-		System.out.print("Р’РІРµРґРё СЃРІРѕР№ РІРµСЃ РІ РєРі\n");		//РџСЂРѕС€Сѓ РІРІРµСЃС‚Рё РІРµСЃ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+		System.setProperty("console.encoding","cp866");	//На всякий случай задаю кодировку
+		System.out.print("Введи свой вес в кг\n");		//Прошу ввести вес пользователя
 		Scanner first = new Scanner(System.in); 
-		float kg = first.nextInt();						//РќРµРєРѕС‚РѕСЂС‹Рµ СЃР»РµРґСЏС‚ Р·Р° РІРµСЃРѕРј РґРѕ РіСЂР°РјРјР°
+		float kg = first.nextInt();						//Некоторые следят за весом до грамма
 		
-		System.out.print("Р’РІРµРґРё СЃРІРѕР№ СЂРѕСЃС‚ РІ СЃРј\n");		//РџСЂРѕС€Сѓ РІРІРµСЃС‚Рё СЂРѕСЃС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
+		System.out.print("Введи свой рост в см\n");		//Прошу ввести рост пользователя
 		Scanner second = new Scanner(System.in); 
 		float cm = second.nextInt();
 		
-		float ideal = cm - 100;							//Р¤РѕСЂРјСѓР»Р° РѕРїС‚РёРјР°Р»СЊРЅРѕРіРѕ РІРµСЃР°
+		float ideal = cm - 100;							//Формула оптимального веса
 		
 		if (ideal > kg){
-			System.out.println("Р‘РѕР»СЊС€Рµ РµС€СЊ, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРїСЂР°РІРёС‚СЊСЃСЏ");
+			System.out.println("Больше ешь, тебе нужно поправиться");
 		}
 		if (ideal < kg){
-			System.out.println("РЎР»РµРґРё Р·Р° РїРёС‚Р°РЅРёРµРј Рё Р·Р°Р№РјРёСЃСЊ СЃРїРѕСЂС‚РѕРј, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕС…СѓРґРµС‚СЊ");
+			System.out.println("Следи за питанием и займись спортом, тебе нужно похудеть");
 		}
 		if (ideal == kg) {
-			System.out.println("РўС‹ РїСЂРµРєСЂР°СЃРµРЅ!");
+			System.out.println("Ты прекрасен!");
 		}
 		first.close();
 		second.close();

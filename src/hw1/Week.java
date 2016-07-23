@@ -6,27 +6,27 @@ public class Week {
 	
 public static void main(String[] args){
 		
-		System.setProperty("console.encoding","cp866");	//РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№ Р·Р°РґР°СЋ РєРѕРґРёСЂРѕРІРєСѓ
-		System.out.print("Р’РІРµРґРё РїРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ РґРЅСЏ РЅРµРґРµР»Рё:\n");	//РџСЂРёРЅРёРјР°РµРј РґРµРЅСЊ
+		System.setProperty("console.encoding","cp866");	//На всякий случай задаю кодировку
+		System.out.print("Введи порядковый номер дня недели:\n");	//Принимаем день
 		Scanner first = new Scanner(System.in); 
 		int x = first.nextInt();
 		
 		String dayName;
 		if(x == 1)
-			dayName = "РџРѕРЅРµРґРµР»СЊРЅРёРє";
+			dayName = "Понедельник";
 		else if(x == 2)
-			dayName = "Р’С‚РѕСЂРЅРёРє";
+			dayName = "Вторник";
 		else if(x == 3)
-			dayName = "РЎСЂРµРґР°";
+			dayName = "Среда";
 		else if(x == 4)
-			dayName = "Р§РµС‚РІРµСЂРі";
+			dayName = "Четверг";
 		else if(x == 5)
-			dayName = "РџСЏС‚РЅРёС†Р°";
+			dayName = "Пятница";
 		else if(x == 6)
-			dayName = "РЎСѓР±Р±РѕС‚Р°";
+			dayName = "Суббота";
 		else if(x == 7)
-			dayName = "Р’РѕСЃРєСЂРµСЃРµРЅСЊРµ";
-		else dayName = "РЈ С‚РµР±СЏ, С‡С‚Рѕ? СЃРµРјСЊ РїСЏС‚РЅРёС† РЅР° РЅРµРґРµР»Рµ?";
+			dayName = "Воскресенье";
+		else dayName = "У тебя, что? семь пятниц на неделе?";
 		System.out.println(dayName);
 		first.close();
 }	

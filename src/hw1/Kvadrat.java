@@ -6,7 +6,7 @@ public class Kvadrat {
 		
 		for (int i = 1; i <= 10; i++) {
 			int square = (int) Math.pow(i, 2);
-			System.out.println(i + " Ğ² ĞºĞ²Ğ°Ğ´Ñ€Ğ°Ñ‚Ğµ = " + square);
+			System.out.println(i + " â êâàäğàòå = " + square);
 			}
 	}
 }

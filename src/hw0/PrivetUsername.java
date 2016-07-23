@@ -6,11 +6,11 @@ public class PrivetUsername {
 	
 	public static void main(String[] args) {
 	
-		System.out.print("РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?\n");
+		System.out.print("Как тебя зовут?\n");
 		Scanner greeting = new Scanner(System.in, "cp866"); 
-		System.setProperty("console.encoding","cp866");//Р”РѕР»Р¶РЅРѕ РІС‹РІРѕРґРёС‚СЊ РЅР° СЂСѓСЃСЃРєРѕРј, РІСЂРѕРґРµ
+		System.setProperty("console.encoding","cp866");//Должно выводить на русском, вроде
 		String userName = greeting.next();
-		System.out.print("РџСЂРёРІРµС‚, " + userName + "!");
+		System.out.print("Привет, " + userName + "!");
 		greeting.close();
 	}
 }
