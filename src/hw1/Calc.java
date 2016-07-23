@@ -17,22 +17,34 @@ public class Calc {
  * and, since, there is an operation of division
  * I've made the type double 				
  */
-		System.setProperty("console.encoding","cp866");				//На всякий случай задаю кодировку
-		System.out.print("Введи первое число\n");					//Прошу ввести первое из чисел
+/*Setting a proper coding*/
+		System.setProperty("console.encoding","cp866");	
+/*Asking to 
+ *input a number		
+ */
+		System.out.print("Введи первое число\n");					
 		Scanner first = new Scanner(System.in); 
 		double x = first.nextInt();
 /**
  * Operator Do-While is used to navigate through the menu		
  */
 		char choice;
-		do {														//Использую Do-While для выбора пунктов меню
+/*Using Do-While
+ *for choosing menu
+ *options
+ */
+		do {																	
 			System.out.println("Выбери действие: ");
 			System.out.println("1. Деление");
 			System.out.println("2. Сложение");
 			choice = (char) System.in.read();
 		} while( choice < '1' || choice > '2');
+/*Asking for the second number
+ *either a divider or
+ *a summand
+ */
 		
-		System.out.print("Введи второе число\n");					//Прошу ввести второе число
+		System.out.print("Введи второе число\n");					
 		Scanner second = new Scanner(System.in); 
 		double y = second.nextInt();
 /**
@@ -59,7 +71,11 @@ public class Calc {
  * I use another Scanner to put together an exit,
  * thought it is a rough and crooked construction I use
  */
-		System.out.print("Для выхода введите q\n");					//Тут, если повезет можно выйти нажав на q
+/*In here, it is possible
+ * to quit, if you are
+ * lucky enough		
+ */
+		System.out.print("Для выхода введите q\n");					
 		Scanner third = new Scanner(System.in); 
 		String q = third.next();
 			if (q.compareToIgnoreCase("q") == 0){
