@@ -24,7 +24,7 @@ public class Calc {
  */
 		System.out.print("Введи первое число\n");					
 		Scanner first = new Scanner(System.in); 
-		double x = first.nextInt();
+		double x = first.nextDouble();
 /**
  * Operator Do-While is used to navigate through the menu		
  */
@@ -46,7 +46,7 @@ public class Calc {
 		
 		System.out.print("Введи второе число\n");					
 		Scanner second = new Scanner(System.in); 
-		double y = second.nextInt();
+		double y = second.nextDouble();
 /**
  * Operator Switch-Case is used to determine our choices
  * it might be useful if I decide to teach this calculator other operations
