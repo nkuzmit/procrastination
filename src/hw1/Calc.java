@@ -20,7 +20,7 @@ public class Calc {
 /*Setting a proper coding*/
 		System.setProperty("console.encoding","cp866");	
 /*Asking to 
- *input a number (double)
+ *input a number
  */
 		System.out.print("Введи первое число\n");					
 		Scanner first = new Scanner(System.in); 
