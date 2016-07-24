@@ -17,14 +17,15 @@ public static void main(String[] args) {
 	int imin = 0;
 	int imax = 0;
 	for(int x = 0; x < arr.length; x++){
-	   if(min >arr[x])
+	   if(min >arr[x]){
 	        min = arr[x];
 	    	imin = x;
-	   if(max < arr[x])
+	   }
+	   if(max < arr[x]){
 	        max = arr[x];
 			imax = x;
 			}
-		
+		}
 	System.out.printf("min value = %d by index [%d]%nmax value = %d by index [%d]", min, imin, max, imax);
 }
 }
