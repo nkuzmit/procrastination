@@ -16,11 +16,11 @@ public static void main(String[] args) {
 	int max = arr[0];
 	int imin = 0;
 	int imax = 0;
-		for(int x = 0; x < arr.length; x++){
-	    if(min >arr[x])
+	for(int x = 0; x < arr.length; x++){
+	   if(min >arr[x])
 	        min = arr[x];
 	    	imin = x;
-		if(max < arr[x])
+	   if(max < arr[x])
 	        max = arr[x];
 			imax = x;
 			}
