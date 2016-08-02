@@ -14,9 +14,9 @@ public static void main(String[] args) {
 		for (int i = 0; i < f.length; i++) {
             if (f[i] == 0)
                 result[x++] = f[i];
-}
+		}		
 		System.out.println("Новый массив:");
         for (int i = 0; i < result.length; i++)
-            System.out.printf("%-4d", result[i]);
-}
+            System.out.printf("%-4d", result[i]);	
+	}
 }
