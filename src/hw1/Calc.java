@@ -34,11 +34,11 @@ public class Calc {
  *options
  */
 		do {																	
-			System.out.println("Выбери действие: ");
+			System.out.println("Выбери действие вводом его номера: ");
 			System.out.println("1. Деление");
 			System.out.println("2. Сложение");
 			choice = (char) System.in.read();
-		} while( choice < '1' || choice > '2');
+		} while( choice < '1' || choice > '2');  //Вводить надо 1 (для деления) или 2 (для сложения), а не / и +
 /*Asking for the second number
  *either a divider or
  *a summand
