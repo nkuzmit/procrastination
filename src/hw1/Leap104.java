@@ -10,14 +10,12 @@ public static void main(String[] args){
 		Scanner first = new Scanner(System.in); 
 		int year = first.nextInt();
 		
-		if (year % 4 != 0){								//Проверяю делением на 4, возможно сразу определю не високосный
-			System.out.println("Этот год не високосный!");
+		if (year%4==0 && year%100 !=0 || year%400==0){
+			System.out.println("Этот год високосный!");
 		}
 		else {
-			if(year % 100 == 0 && year % 400 ==0){		//Если дошел сюда, проверяю делением на 100 и 400
-				System.out.println("Этот год високосный!");
+			System.out.println("Этот год не високосный!");
 			}
-		}
 		first.close();
-	}
+		}
 }
