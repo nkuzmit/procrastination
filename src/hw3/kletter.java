@@ -28,7 +28,8 @@ public class kletter {
 				res += w[i].substring(ind, w[i].length());
 				w[i] = res;
 			}
-			System.out.print(" " + w[i]);
+		
+			System.out.print(w[i] + " ");
 		}
 		s.close();
 	}
